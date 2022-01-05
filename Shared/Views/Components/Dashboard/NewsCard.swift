@@ -14,7 +14,7 @@ struct NewsCard: View {
         HStack {
             ZStack(alignment: .leading) {
                 NavigationLink(
-                    destination: Text(articleVM.headline)) {
+                    destination: DetailedView(articleVM: articleVM)) {
                     EmptyView()
                 }
                 .opacity(0)
@@ -38,12 +38,13 @@ struct NewsCard: View {
                 
             }
             Spacer()
-            Button(action: toggleLike) {
-                Image(systemName: articleVM.isLiked ? "heart.fill" : "heart")
-                    .foregroundColor(.red)
-                    .padding()
-            }
-            .padding()
+//            Button(action: toggleLike) {
+//                Image(systemName: articleVM.isLiked ? "heart.fill" : "heart")
+//                    .foregroundColor(.red)
+//                    .padding()
+//            }
+//            .padding()
+            LikeButton(action: toggleLike, isLiked: $articleVM.isLiked)
         }
         .overlay(
                 RoundedRectangle(cornerRadius: 10)

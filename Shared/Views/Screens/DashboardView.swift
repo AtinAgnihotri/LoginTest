@@ -24,6 +24,7 @@ struct DashboardView: View {
                     Text("Retry")
                         .background(Color.black)
                         .foregroundColor(.white)
+                        .padding()
                         .cornerRadius(10)
                 }
             } else {

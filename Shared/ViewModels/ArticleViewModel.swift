@@ -40,8 +40,22 @@ class ArticleViewModel: ObservableObject {
         article.description ?? ""
     }
     
+    var hasDescription: Bool {
+        !description.isEmpty
+    }
+    
     var author: String? {
         article.author
+    }
+    
+    var imageUrl: URL? {
+        guard let urlToImage = article.urlToImage else {
+            return nil
+        }
+        guard let url = URL(string: urlToImage) else {
+            return nil
+        }
+        return url
     }
     
     func like() {

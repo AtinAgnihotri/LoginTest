@@ -24,6 +24,8 @@
 		F85565EA27857FF500E7FA37 /* ArticleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565E927857FF500E7FA37 /* ArticleController.swift */; };
 		F85565EC2785803300E7FA37 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565EB2785803300E7FA37 /* ArticleViewModel.swift */; };
 		F85565F02785857B00E7FA37 /* NewsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565EF2785857B00E7FA37 /* NewsCard.swift */; };
+		F85565F2278598B400E7FA37 /* DetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565F1278598B400E7FA37 /* DetailedView.swift */; };
+		F85565F52785995800E7FA37 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565F42785995800E7FA37 /* LikeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		F85565E927857FF500E7FA37 /* ArticleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleController.swift; sourceTree = "<group>"; };
 		F85565EB2785803300E7FA37 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		F85565EF2785857B00E7FA37 /* NewsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCard.swift; sourceTree = "<group>"; };
+		F85565F1278598B400E7FA37 /* DetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedView.swift; sourceTree = "<group>"; };
+		F85565F42785995800E7FA37 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 			children = (
 				F85565DF2785738B00E7FA37 /* LoginView.swift */,
 				F85565E627857ED200E7FA37 /* DashboardView.swift */,
+				F85565F1278598B400E7FA37 /* DetailedView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 		F85565E1278575FB00E7FA37 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F85565F32785994100E7FA37 /* Common */,
 				F85565EE2785856D00E7FA37 /* Dashboard */,
 				F85565ED2785856000E7FA37 /* Login */,
 			);
@@ -181,6 +187,14 @@
 				F85565EF2785857B00E7FA37 /* NewsCard.swift */,
 			);
 			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		F85565F32785994100E7FA37 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F85565F42785995800E7FA37 /* LikeButton.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +299,7 @@
 				F85565E527857A7000E7FA37 /* LoginButton.swift in Sources */,
 				F85565EA27857FF500E7FA37 /* ArticleController.swift in Sources */,
 				F85565E02785738B00E7FA37 /* LoginView.swift in Sources */,
+				F85565F2278598B400E7FA37 /* DetailedView.swift in Sources */,
 				F85565C627856B0300E7FA37 /* ContentView.swift in Sources */,
 				F85565DC278571E600E7FA37 /* LoginViewModel.swift in Sources */,
 				F85565D427856B2200E7FA37 /* LoginResponse.swift in Sources */,
@@ -293,6 +308,7 @@
 				F85565E727857ED200E7FA37 /* DashboardView.swift in Sources */,
 				F85565EC2785803300E7FA37 /* ArticleViewModel.swift in Sources */,
 				F85565D927856CB700E7FA37 /* Webservice.swift in Sources */,
+				F85565F52785995800E7FA37 /* LikeButton.swift in Sources */,
 				F85565C427856B0300E7FA37 /* LoginTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
