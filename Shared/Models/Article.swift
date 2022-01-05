@@ -15,10 +15,11 @@ struct ArticleSource: Decodable {
 struct Article: Decodable {
     let url: String
     let title: String
+    let author: String?
     let source: ArticleSource
-    let content: String
-    let urlToImage: String
-    let description: String
+    let content: String?
+    let urlToImage: String?
+    let description: String?
     let publishedAt: String
 }
 

@@ -20,6 +20,9 @@
 		F85565E02785738B00E7FA37 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565DF2785738B00E7FA37 /* LoginView.swift */; };
 		F85565E32785765000E7FA37 /* LoginInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565E22785765000E7FA37 /* LoginInputField.swift */; };
 		F85565E527857A7000E7FA37 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565E427857A7000E7FA37 /* LoginButton.swift */; };
+		F85565E727857ED200E7FA37 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565E627857ED200E7FA37 /* DashboardView.swift */; };
+		F85565EA27857FF500E7FA37 /* ArticleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565E927857FF500E7FA37 /* ArticleController.swift */; };
+		F85565EC2785803300E7FA37 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565EB2785803300E7FA37 /* ArticleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		F85565DF2785738B00E7FA37 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F85565E22785765000E7FA37 /* LoginInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInputField.swift; sourceTree = "<group>"; };
 		F85565E427857A7000E7FA37 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		F85565E627857ED200E7FA37 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		F85565E927857FF500E7FA37 /* ArticleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleController.swift; sourceTree = "<group>"; };
+		F85565EB2785803300E7FA37 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 		F85565B327856B0100E7FA37 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F85565E827857FDF00E7FA37 /* Controllers */,
 				F85565DD2785737800E7FA37 /* Views */,
 				F85565DA278571D400E7FA37 /* ViewModels */,
 				F85565D727856CAA00E7FA37 /* Services */,
@@ -117,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				F85565DB278571E600E7FA37 /* LoginViewModel.swift */,
+				F85565EB2785803300E7FA37 /* ArticleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -134,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				F85565DF2785738B00E7FA37 /* LoginView.swift */,
+				F85565E627857ED200E7FA37 /* DashboardView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -145,6 +154,14 @@
 				F85565E427857A7000E7FA37 /* LoginButton.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		F85565E827857FDF00E7FA37 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F85565E927857FF500E7FA37 /* ArticleController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,11 +264,14 @@
 			files = (
 				F85565D627856B5D00E7FA37 /* Article.swift in Sources */,
 				F85565E527857A7000E7FA37 /* LoginButton.swift in Sources */,
+				F85565EA27857FF500E7FA37 /* ArticleController.swift in Sources */,
 				F85565E02785738B00E7FA37 /* LoginView.swift in Sources */,
 				F85565C627856B0300E7FA37 /* ContentView.swift in Sources */,
 				F85565DC278571E600E7FA37 /* LoginViewModel.swift in Sources */,
 				F85565D427856B2200E7FA37 /* LoginResponse.swift in Sources */,
 				F85565E32785765000E7FA37 /* LoginInputField.swift in Sources */,
+				F85565E727857ED200E7FA37 /* DashboardView.swift in Sources */,
+				F85565EC2785803300E7FA37 /* ArticleViewModel.swift in Sources */,
 				F85565D927856CB700E7FA37 /* Webservice.swift in Sources */,
 				F85565C427856B0300E7FA37 /* LoginTestApp.swift in Sources */,
 			);

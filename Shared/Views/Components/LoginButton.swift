@@ -14,11 +14,13 @@ struct LoginButton: View {
         Button(action: action) {
             Text(isLoading ? "Loading" : "Proceed")
         }
+        .disabled(isLoading)
         .padding()
         .overlay(
                 RoundedRectangle(cornerRadius: 10)
                     .stroke(Color.black, lineWidth: 3)
                 )
+        
     }
 }
 
