@@ -17,18 +17,8 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             VStack {
-                TextField("UserNameField", text: $userName, prompt: Text("Enter User name"))
-                    .padding()
-                    .overlay(
-                                RoundedRectangle(cornerRadius: 20)
-                                    .stroke(Color.black, lineWidth: 5)
-                            )
-                TextField("PasswordField", text: $userName, prompt: Text("Enter User name"))
-                    .padding()
-                    .overlay(
-                                RoundedRectangle(cornerRadius: 20)
-                                    .stroke(Color.black, lineWidth: 5)
-                            )
+                LoginInputField(key: "UserNameField", binding: $userName, prompt: "Enter User name")
+                LoginInputField(key: "PasswordField", binding: $password, prompt: "Enter Password", secure: true)
                 Button(action: proceedWithLogin) {
                     if loginVM.isLoading {
                         Text("Loading")
