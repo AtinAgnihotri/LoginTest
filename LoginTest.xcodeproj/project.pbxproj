@@ -23,6 +23,7 @@
 		F85565E727857ED200E7FA37 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565E627857ED200E7FA37 /* DashboardView.swift */; };
 		F85565EA27857FF500E7FA37 /* ArticleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565E927857FF500E7FA37 /* ArticleController.swift */; };
 		F85565EC2785803300E7FA37 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565EB2785803300E7FA37 /* ArticleViewModel.swift */; };
+		F85565F02785857B00E7FA37 /* NewsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565EF2785857B00E7FA37 /* NewsCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		F85565E627857ED200E7FA37 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		F85565E927857FF500E7FA37 /* ArticleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleController.swift; sourceTree = "<group>"; };
 		F85565EB2785803300E7FA37 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		F85565EF2785857B00E7FA37 /* NewsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,8 +152,8 @@
 		F85565E1278575FB00E7FA37 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				F85565E22785765000E7FA37 /* LoginInputField.swift */,
-				F85565E427857A7000E7FA37 /* LoginButton.swift */,
+				F85565EE2785856D00E7FA37 /* Dashboard */,
+				F85565ED2785856000E7FA37 /* Login */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -162,6 +164,23 @@
 				F85565E927857FF500E7FA37 /* ArticleController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F85565ED2785856000E7FA37 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F85565E22785765000E7FA37 /* LoginInputField.swift */,
+				F85565E427857A7000E7FA37 /* LoginButton.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F85565EE2785856D00E7FA37 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				F85565EF2785857B00E7FA37 /* NewsCard.swift */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +288,7 @@
 				F85565C627856B0300E7FA37 /* ContentView.swift in Sources */,
 				F85565DC278571E600E7FA37 /* LoginViewModel.swift in Sources */,
 				F85565D427856B2200E7FA37 /* LoginResponse.swift in Sources */,
+				F85565F02785857B00E7FA37 /* NewsCard.swift in Sources */,
 				F85565E32785765000E7FA37 /* LoginInputField.swift in Sources */,
 				F85565E727857ED200E7FA37 /* DashboardView.swift in Sources */,
 				F85565EC2785803300E7FA37 /* ArticleViewModel.swift in Sources */,
