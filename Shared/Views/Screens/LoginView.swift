@@ -33,12 +33,12 @@ struct LoginView: View {
     
     func proceedWithLogin() {
         guard !userName.isEmpty else {
-            // MARK: SHOW ALERT HERE
+            AppUtils.shared.showAlert(title: "🚨 Error", message: "Username cannot be empty")
             print("Please Enter Username")
             return
         }
         guard !password.isEmpty else {
-            // MARK: SHOW ALERT HERE
+            AppUtils.shared.showAlert(title: "🚨 Error", message: "Password cannot be empty")
             print("Please Enter Password")
             return
         }

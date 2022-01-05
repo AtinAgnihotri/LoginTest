@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DashboardView: View {
     let userName: String
-    @ObservedObject var articleController = ArticleController.shared
+    @ObservedObject var articleController = DashboardViewModel.shared
     
     
     var body: some View {

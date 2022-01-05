@@ -7,9 +7,9 @@
 
 import Foundation
 
-class ArticleController: ObservableObject {
+class DashboardViewModel: ObservableObject {
     
-    static let shared = ArticleController()
+    static let shared = DashboardViewModel()
     
     
     
@@ -44,5 +44,7 @@ class ArticleController: ObservableObject {
             fetchArticles()
         }
     }
+    
+    
     
 }
