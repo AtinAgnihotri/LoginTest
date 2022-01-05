@@ -67,7 +67,7 @@ class Webservice {
         }.resume()
     }
     
-    public func authenticate(onCompletion: @escaping (Result<LoginResponse, NetworkError>) -> Void) {
+    public func authenticate(usrname: String, pwd: String, onCompletion: @escaping (Result<LoginResponse, NetworkError>) -> Void) {
         makeRequest(with: LOGIN_API_URL, onCompletion: onCompletion)
     }
     
