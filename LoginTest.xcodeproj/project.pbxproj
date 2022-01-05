@@ -13,6 +13,8 @@
 		F85565C727856B0300E7FA37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565B527856B0100E7FA37 /* ContentView.swift */; };
 		F85565C827856B0300E7FA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85565B627856B0300E7FA37 /* Assets.xcassets */; };
 		F85565C927856B0300E7FA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85565B627856B0300E7FA37 /* Assets.xcassets */; };
+		F85565D427856B2200E7FA37 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565D327856B2200E7FA37 /* LoginModel.swift */; };
+		F85565D627856B5D00E7FA37 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565D527856B5C00E7FA37 /* ArticleModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F85565BB27856B0300E7FA37 /* LoginTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F85565C127856B0300E7FA37 /* LoginTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F85565C327856B0300E7FA37 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		F85565D327856B2200E7FA37 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		F85565D527856B5C00E7FA37 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		F85565B327856B0100E7FA37 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F85565D227856B0F00E7FA37 /* Models */,
 				F85565B427856B0100E7FA37 /* LoginTestApp.swift */,
 				F85565B527856B0100E7FA37 /* ContentView.swift */,
 				F85565B627856B0300E7FA37 /* Assets.xcassets */,
@@ -76,6 +81,15 @@
 				F85565C327856B0300E7FA37 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		F85565D227856B0F00E7FA37 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F85565D327856B2200E7FA37 /* LoginModel.swift */,
+				F85565D527856B5C00E7FA37 /* ArticleModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +190,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F85565D627856B5D00E7FA37 /* ArticleModel.swift in Sources */,
 				F85565C627856B0300E7FA37 /* ContentView.swift in Sources */,
+				F85565D427856B2200E7FA37 /* LoginModel.swift in Sources */,
 				F85565C427856B0300E7FA37 /* LoginTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
