@@ -19,15 +19,14 @@ struct LoginInputField: View {
             SecureField(key, text: $binding, prompt: Text(prompt))
                 .padding()
                 .overlay(
-                        RoundedRectangle(cornerRadius: 20)
+                        RoundedRectangle(cornerRadius: 10)
                             .stroke(Color.black, lineWidth: 3)
                         )
-        }
-        if !secure {
+        } else {
             TextField(key, text: $binding, prompt: Text(prompt))
                 .padding()
                 .overlay(
-                        RoundedRectangle(cornerRadius: 20)
+                        RoundedRectangle(cornerRadius: 10)
                             .stroke(Color.black, lineWidth: 3)
                         )
         }

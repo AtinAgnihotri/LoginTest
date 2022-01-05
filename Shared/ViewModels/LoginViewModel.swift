@@ -11,6 +11,7 @@ class LoginViewModel: ObservableObject {
     
     @Published var proceedWithLogin: Bool = false
     @Published var isLoading: Bool = false
+    @Published var userName: String = ""
     
     func authenticate(userName: String, password: String) {
         isLoading = true
@@ -18,6 +19,7 @@ class LoginViewModel: ObservableObject {
             switch result {
                 case .success(let loginResponse):
                     print("INFO :: LOGIN SUCCEEDED : \(loginResponse)")
+                    self?.userName = loginResponse.fullName
                     self?.proceedWithLogin = true
                 case .failure(let error):
                     print("ERROR :: LOGIN FAILED : \(error)")

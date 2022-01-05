@@ -19,23 +19,31 @@ struct LoginView: View {
             VStack {
                 LoginInputField(key: "UserNameField", binding: $userName, prompt: "Enter User name")
                 LoginInputField(key: "PasswordField", binding: $password, prompt: "Enter Password", secure: true)
-                Button(action: proceedWithLogin) {
-                    if loginVM.isLoading {
-                        Text("Loading")
-                    } else {
-                        Text("Proceed")
-                    }
-                }
-                .padding()
-                .border(Color.black)
+                LoginButton(action: proceedWithLogin, isLoading: $loginVM.isLoading)
+                NavigationLink(destination:
+                                Text("Welcome back \(loginVM.userName)"),
+                               isActive: $loginVM.proceedWithLogin) {
+                     EmptyView()
+                }.hidden()
             }
             .padding()
             .navigationTitle("Login")
+            
         }
     }
     
     func proceedWithLogin() {
-        
+        guard !userName.isEmpty else {
+            // MARK: SHOW ALERT HERE
+            print("Please Enter Username")
+            return
+        }
+        guard !password.isEmpty else {
+            // MARK: SHOW ALERT HERE
+            print("Please Enter Password")
+            return
+        }
+        loginVM.authenticate(userName: userName, password: password)
     }
 }
 
