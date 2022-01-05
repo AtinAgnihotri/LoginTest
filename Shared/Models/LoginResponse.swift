@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LoginModel: Decodable {
+struct LoginResponse: Decodable {
     let token: UUID
     let fullName: String
 }
