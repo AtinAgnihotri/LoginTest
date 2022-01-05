@@ -14,6 +14,13 @@ struct DashboardView: View {
     
     var body: some View {
         VStack {
+            HStack {
+                Text("Hey \(userName)!")
+                    .font(.title2)
+                    .padding()
+                Spacer()
+            }
+            Spacer()
             if articleController.isLoading {
                 Text("Getting your articles!")
                     .font(.headline)
@@ -37,8 +44,9 @@ struct DashboardView: View {
                 .listStyle(PlainListStyle())
                 .listRowSeparator(.hidden)
             }
+            Spacer()
         }
-        .navigationTitle("Hey \(userName)!")
+        .navigationTitle("Dashboard")
         .navigationBarBackButtonHidden(true)
         .onAppear {
             articleController.firstFetch()

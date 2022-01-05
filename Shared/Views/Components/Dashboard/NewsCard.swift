@@ -20,9 +20,12 @@ struct NewsCard: View {
                 .opacity(0)
 
                 VStack {
-                    Text(articleVM.headline)
-                        .font(.headline)
-                        .padding()
+                    HStack {
+                        Text(articleVM.headline)
+                            .font(.headline)
+                            .padding()
+                        Spacer()
+                    }
                     HStack {
                         Text("Published By \(articleVM.author ?? articleVM.sourceName)")
                             .padding(.horizontal)
@@ -38,12 +41,6 @@ struct NewsCard: View {
                 
             }
             Spacer()
-//            Button(action: toggleLike) {
-//                Image(systemName: articleVM.isLiked ? "heart.fill" : "heart")
-//                    .foregroundColor(.red)
-//                    .padding()
-//            }
-//            .padding()
             LikeButton(action: toggleLike, isLiked: $articleVM.isLiked)
         }
         .overlay(

@@ -52,6 +52,7 @@ struct DetailedView: View {
                         Spacer()
                     }
                 }
+                
                 Spacer()
             }
             .frame(maxWidth: .infinity)
