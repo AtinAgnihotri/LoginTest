@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		F85565C427856B0300E7FA37 /* LoginTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565B427856B0100E7FA37 /* LoginTestApp.swift */; };
 		F85565C527856B0300E7FA37 /* LoginTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565B427856B0100E7FA37 /* LoginTestApp.swift */; };
-		F85565C627856B0300E7FA37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565B527856B0100E7FA37 /* ContentView.swift */; };
-		F85565C727856B0300E7FA37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565B527856B0100E7FA37 /* ContentView.swift */; };
 		F85565C827856B0300E7FA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85565B627856B0300E7FA37 /* Assets.xcassets */; };
 		F85565C927856B0300E7FA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85565B627856B0300E7FA37 /* Assets.xcassets */; };
 		F85565D427856B2200E7FA37 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565D327856B2200E7FA37 /* LoginResponse.swift */; };
@@ -31,7 +29,6 @@
 
 /* Begin PBXFileReference section */
 		F85565B427856B0100E7FA37 /* LoginTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTestApp.swift; sourceTree = "<group>"; };
-		F85565B527856B0100E7FA37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F85565B627856B0300E7FA37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F85565BB27856B0300E7FA37 /* LoginTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F85565C127856B0300E7FA37 /* LoginTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,12 +80,11 @@
 			isa = PBXGroup;
 			children = (
 				F85565F72785B30600E7FA37 /* Utils */,
-				F85565DD2785737800E7FA37 /* Views */,
-				F85565DA278571D400E7FA37 /* ViewModels */,
 				F85565D727856CAA00E7FA37 /* Services */,
 				F85565D227856B0F00E7FA37 /* Models */,
+				F85565DD2785737800E7FA37 /* Views */,
+				F85565DA278571D400E7FA37 /* ViewModels */,
 				F85565B427856B0100E7FA37 /* LoginTestApp.swift */,
-				F85565B527856B0100E7FA37 /* ContentView.swift */,
 				F85565B627856B0300E7FA37 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -303,7 +299,6 @@
 				F85565EA27857FF500E7FA37 /* DashboardViewModel.swift in Sources */,
 				F85565E02785738B00E7FA37 /* LoginView.swift in Sources */,
 				F85565F2278598B400E7FA37 /* DetailedView.swift in Sources */,
-				F85565C627856B0300E7FA37 /* ContentView.swift in Sources */,
 				F85565DC278571E600E7FA37 /* LoginViewModel.swift in Sources */,
 				F85565D427856B2200E7FA37 /* LoginResponse.swift in Sources */,
 				F85565F02785857B00E7FA37 /* NewsCard.swift in Sources */,
@@ -321,7 +316,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F85565C727856B0300E7FA37 /* ContentView.swift in Sources */,
 				F85565C527856B0300E7FA37 /* LoginTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
