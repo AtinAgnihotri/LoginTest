@@ -8,30 +8,53 @@
 import SwiftUI
 
 struct NewsCard: View {
-    let articleVM: ArticleViewModel
+    @ObservedObject var articleVM: ArticleViewModel
     
     var body: some View {
-        NavigationLink(destination: Text(articleVM.headline)) {
-            VStack {
-                Text(articleVM.headline)
-                    .font(.headline)
-                HStack {
-                    Text("Published By \(articleVM.author ?? articleVM.sourceName)")
-                    Spacer()
-                    Text("On \(articleVM.publishedOn)")
+        HStack {
+            ZStack(alignment: .leading) {
+                NavigationLink(
+                    destination: Text(articleVM.headline)) {
+                    EmptyView()
                 }
+                .opacity(0)
+
+                VStack {
+                    Text(articleVM.headline)
+                        .font(.headline)
+                        .padding()
+                    HStack {
+                        Text("Published By \(articleVM.author ?? articleVM.sourceName)")
+                            .padding(.horizontal)
+                        Spacer()
+                    }
+                    HStack {
+                        Text("On \(articleVM.publishedOn)")
+                            .padding(.horizontal)
+                            .padding(.bottom)
+                        Spacer()
+                    }
+                }
+                
             }
-            .overlay(
-                    RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color.black, lineWidth: 1)
-                    )
-            .shadow(radius: 25)
+            Spacer()
+            Button(action: toggleLike) {
+                Image(systemName: articleVM.isLiked ? "heart.fill" : "heart")
+                    .foregroundColor(.red)
+                    .padding()
+            }
+            .padding()
         }
+        .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(Color.black, lineWidth: 1)
+                )
+        .shadow(radius: 25)
+        .padding()
+        .buttonStyle(BorderlessButtonStyle())
+    }
+    
+    func toggleLike() {
+        articleVM.isLiked.toggle()
     }
 }
-
-//struct NewsCard_Previews: PreviewProvider {
-//    static var previews: some View {
-//        NewsCard(.)
-//    }
-//}

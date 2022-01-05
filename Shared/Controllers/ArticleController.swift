@@ -11,9 +11,21 @@ class ArticleController: ObservableObject {
     
     static let shared = ArticleController()
     
+    
+    
     @Published var articles = [ArticleViewModel]()
+    @Published var isLoading = false
     
     private init() {
+        
+    }
+    
+    var noArticlesLoaded: Bool {
+        articles.isEmpty
+    }
+    
+    func fetchArticles() {
+        isLoading = true
         Webservice.shared.fetchNews { [weak self] result in
             switch result {
                 case .success(let articleRespone):
@@ -23,6 +35,13 @@ class ArticleController: ObservableObject {
                 case .failure(let error):
                     print("ERROR :: NEWS FETCH FAILED : \(error)")
             }
+            self?.isLoading = false
+        }
+    }
+    
+    func firstFetch() {
+        if articles.isEmpty {
+            fetchArticles()
         }
     }
     

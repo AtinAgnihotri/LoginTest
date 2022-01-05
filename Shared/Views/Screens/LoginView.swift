@@ -21,14 +21,13 @@ struct LoginView: View {
                 LoginInputField(key: "PasswordField", binding: $password, prompt: "Enter Password", secure: true)
                 LoginButton(action: proceedWithLogin, isLoading: $loginVM.isLoading)
                 NavigationLink(destination:
-                                Text("Welcome back \(loginVM.userName)"),
+                                DashboardView(userName: loginVM.userName),
                                isActive: $loginVM.proceedWithLogin) {
                      EmptyView()
                 }.hidden()
             }
             .padding()
             .navigationTitle("Login")
-            
         }
     }
     
