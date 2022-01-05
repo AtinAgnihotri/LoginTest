@@ -17,6 +17,7 @@
 		F85565D627856B5D00E7FA37 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565D527856B5C00E7FA37 /* Article.swift */; };
 		F85565D927856CB700E7FA37 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565D827856CB700E7FA37 /* Webservice.swift */; };
 		F85565DC278571E600E7FA37 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565DB278571E600E7FA37 /* LoginViewModel.swift */; };
+		F85565E02785738B00E7FA37 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85565DF2785738B00E7FA37 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F85565D527856B5C00E7FA37 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		F85565D827856CB700E7FA37 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		F85565DB278571E600E7FA37 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F85565DF2785738B00E7FA37 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		F85565B327856B0100E7FA37 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F85565DD2785737800E7FA37 /* Views */,
 				F85565DA278571D400E7FA37 /* ViewModels */,
 				F85565D727856CAA00E7FA37 /* Services */,
 				F85565D227856B0F00E7FA37 /* Models */,
@@ -112,6 +115,30 @@
 				F85565DB278571E600E7FA37 /* LoginViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F85565DD2785737800E7FA37 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F85565E1278575FB00E7FA37 /* Components */,
+				F85565DE2785738000E7FA37 /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F85565DE2785738000E7FA37 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F85565DF2785738B00E7FA37 /* LoginView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F85565E1278575FB00E7FA37 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F85565D627856B5D00E7FA37 /* Article.swift in Sources */,
+				F85565E02785738B00E7FA37 /* LoginView.swift in Sources */,
 				F85565C627856B0300E7FA37 /* ContentView.swift in Sources */,
 				F85565DC278571E600E7FA37 /* LoginViewModel.swift in Sources */,
 				F85565D427856B2200E7FA37 /* LoginResponse.swift in Sources */,
